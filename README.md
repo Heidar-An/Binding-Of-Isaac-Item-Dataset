@@ -3,6 +3,7 @@ Images scraped (using BeautifulSoup) from the BOI Fandom Wiki: https://bindingof
 
 ### Format of data
 Each item is a 40x40 PNG, stored in a separate directory, with 200 images, each image has random augmentations. (Augmentations done because of limited data available).
+There are 720 items in total
 
 ### What augmentations?
 ```python
