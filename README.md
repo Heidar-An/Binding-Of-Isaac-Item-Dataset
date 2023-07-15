@@ -1,5 +1,5 @@
 ## Binding Of Isaac Item Dataset
-Images scraped (using BeautifulSoup) from the BOI Fandom Wiki: https://bindingofisaacrebirth.fandom.com/wiki/Items#Passive_Collectibles with 200 image augmentations for each item.
+Images scraped (using BeautifulSoup) from the BOI Fandom Wiki: https://bindingofisaacrebirth.fandom.com/wiki/Items with 200 image augmentations for each item.
 
 ### Format of data
 Each item is a 32z32 PNG, stored in a separate directory, with 200 images, each image has random augmentations. (Augmentations done because of limited data available).
