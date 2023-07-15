@@ -8,15 +8,12 @@ There are 720 items in total
 ### What augmentations?
 ```python
 data_transforms = transforms.Compose([
-        transforms.Resize((32, 32)), 
-        transforms.RandomPerspective(p=0.85), 
+        transforms.Resize(30), 
+        transforms.RandomPerspective(p=0.75), 
         transforms.ToTensor(),
-        transforms.Pad(4), # pad images because there's gonna be random pixels around the item (unlikely to be by itself)
-        transforms.GaussianBlur(1, sigma=(0.1, 1.0)),
-        transforms.Lambda(lambda x: x * 255.0),
-        transforms.Lambda(lambda x: x.byte()),
+        transforms.Pad(1), # pad images because there's gonna be random pixels around the item (unlikely to be by itself)
+        transforms.GaussianBlur(1, sigma=(0.1, 0.3)),
         transforms.ToPILImage(),
-        transforms.Lambda(color_jitter_channels),
     ])
 ```
 
