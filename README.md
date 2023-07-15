@@ -39,7 +39,7 @@ collectible_datasets = {"train": train_set, "validate": validate_set, "test": te
 
 collectible_class_names = activated_collectible_dataset.classes + passive_collectible_dataset.classes
 
-collectible_dataloader = DataLoader(collectible_dataset, batch_size=32, shuffle=True)
+collectible_dataloaders = {x: DataLoader(collectible_datasets[x], batch_size=32, shuffle=True) for x in ["train", "validate", "test"]}
 ```
 
 
